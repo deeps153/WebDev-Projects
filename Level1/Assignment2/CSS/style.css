@@ -1,0 +1,264 @@
+/* font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* ### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+
+
+:root{
+ --color-primary-Bright-orange: hsl(31, 77%, 52%);
+ --color-primary-dark-cyan:hsl(184, 100%, 22%);
+ --color-primary-v-dark-cyan:hsl(179, 100%, 13%);
+ --para-white:hsla(0, 0%, 100%, 0.75);
+ --backg-very-light-gray:hsl(0, 0%, 95%);
+ --font-family-Lexend-Deca: 'Lexend Deca', sans-serif;
+ --font-family-big-s:'Big Shoulders Display', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* .inner_wrapper{
+    width: 100%;
+    height: auto;
+   
+} */
+.main__section{
+    width: 80%;
+    /* background-color: blueviolet; */
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+
+.sedans{
+    width: 33.33%;
+    background-color: var(--color-primary-Bright-orange);
+    height: auto;
+    padding: 33px;
+    border-radius: 7px 0 0 7px;
+    position: relative;
+}
+
+.one{
+    position: absolute;bottom: 20px;
+}
+
+.btn{
+    color: var(--para-white);
+    border: 2px solid var(--para-white);
+    background: transparent;
+    border-radius: 20px ;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+    font-family: var(--font-family-Lexend-Deca);
+ 
+ 
+}
+
+
+
+
+.suvs{
+    width: 33.33%;
+    background-color: var(--color-primary-dark-cyan);
+    padding: 33px;
+    position: relative;
+}
+
+.two{
+    position: absolute;
+    bottom: 20px;
+}
+
+.luxury{
+    width: 33.33%;
+    background-color: var(--color-primary-v-dark-cyan);
+    padding: 33px;
+    border-radius: 0 7px 7px 0;
+    position: relative;
+}
+
+.three{
+    position: absolute;
+    bottom: 20px;
+}
+.learn_more{
+    /* display: flex; */
+    /* align-items: end; */
+    /* position: absolute;
+    bottom: 30px; */
+  
+}
+
+
+
+.logo{
+    margin-bottom: 25px;
+
+}
+
+.heading{
+    font-family: var(--font-family-big-s);
+    color: var(--para-white);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.description{
+    /* color: var(--para-white); */
+    color: var(--backg-very-light-gray);
+    margin-bottom: 5rem;
+    opacity: 0.7;
+}
+
+.description ul li{
+    font-family: var(--font-family-Lexend-Deca);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--backg-very-light-gray);
+
+}
+
+.description ul{
+    list-style: none;
+}
+
+
+
+.one:hover{
+    color:var(--color-primary-Bright-orange) ;
+    background-color:var(--para-white);
+
+}
+
+.two:hover{
+    color:var(--color-primary-dark-cyan) ;
+    background-color:var(--para-white);
+
+}
+.three:hover{
+    color:var(--color-primary-v-dark-cyan) ;
+    background-color:var(--para-white);
+
+}
+
+/* .learn_more{
+    position: absolute;
+    bottom: 125px;
+} */
+
+
+
+/* media query */
+
+
+@media screen and (max-width:1200px) {
+    .main__section{
+        width: 100%;
+     
+    }
+}
+
+@media screen and (max-width:992px) {
+    .main__section{
+        width: 100%;
+     
+    }
+ 
+    .sedans{
+       
+        padding: 25px;
+     
+    }
+    .suvs{
+        padding: 25px;
+
+    }
+    .luxury{
+        padding: 25px;
+
+    }
+}
+
+
+@media screen and (max-width:868px) {
+
+    .wrapper{
+        padding: 3% 1%;
+    }
+    .sedans{
+       
+        padding: 20px;
+     
+    }
+    .suvs{
+        padding: 20px;
+
+    }
+    .luxury{
+        padding: 20px;
+
+    }
+
+}
+
+@media screen and (max-width:780px) {
+.main__section{
+    flex-direction: column;
+    width: 80%;
+}
+
+.sedans , .suvs , .luxury
+{
+    width: 70%;
+    padding: 35px;
+    /* padding: 30px 30px 30px 50px ; */
+}
+.sedans{
+    border-radius: 7px 7px 0 0 ;
+}
+
+.luxury{
+    border-radius: 0px 0px 7px 7px;
+}
+}
+
+/* 989  - 1150 */
+
+@media screen and (max-width:400px) {
+   
+    .sedans , .suvs , .luxury
+    {
+        width: 70%;
+        padding: 15px;
+        /* padding: 30px 30px 30px 50px ; */
+    }
+
+    }

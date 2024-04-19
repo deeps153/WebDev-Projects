@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* root */
+
+:root {
+    --primary-light-blue: #4abebd;
+    --secondary-blue: #2ab3b2;
+    --light-grey: hsl(204, 43%, 93%);
+    --bc: #e6eff6;
+    --primary-Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --primary-Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --primary-Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --primary-font-family: 'League Spartan', sans-serif;
+
+}
+
+.container {
+    font-family: var(--primary-font-family);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--primary-Light-Grayish-Blue);
+}
+
+.logo {
+    padding: 20px 0 50px 0;
+}
+
+.group_chat {
+    display: flex;
+    width: 100%;
+}
+
+.gc__left {
+    /* background-color: aqua; */
+    width: 33.33%;
+}
+
+.right-one {
+    display: none;
+}
+
+
+
+.gc__desp {
+    width: 33.33%;
+    text-align: center;
+}
+
+.gc__desp .description p {
+    color: #999;
+    padding: 10px 20px;
+}
+
+.buttons_section button:first-child {
+    background-color: var(--primary-light-blue);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.buttons_section button:last-child {
+    background-color: var(--primary-Desaturated-Dark-Blue);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.gc__right {
+    /* background-color: bisque; */
+    width: 33.33%;
+}
+
+.or__section {
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.inner_card1 {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card1 {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.card1 img {
+    width: 100%;
+}
+
+.card2 {
+    width: 25%;
+    margin-right: 20px;
+}
+
+
+.card2 img {
+    width: 100%;
+}
+
+.card3 {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.card3 img {
+    width: 100%;
+}
+
+.card4 {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.card4 img {
+    width: 100%;
+}
+
+
+.inner_card2 {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.smart_meeting {
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner_smeeting {
+    width: 40%;
+}
+
+.smart_meeting h1 {
+    padding: 10px 72px;
+    width: 100%;
+}
+
+.smart_meeting p {
+    padding: 10px;
+    width: 100%;
+}
+
+.smart_meeting .desc {
+    width: 100%;
+}
+
+.experience__more {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: var(--primary-light-blue); */
+    color: #ffffff;
+    padding: 80px 0;
+    z-index: 9;
+    background-image: url(../images/desktop/image-footer.jpg);
+    position: relative;
+    background-position: cover;
+}
+
+.experience__more::after {
+    content: "";
+    position: absolute;
+    background-color: #4abebd;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: -webkit-fill-available;
+    z-index: -1;
+
+}
+
+.experience__more_title {
+    width: 33.33%;
+    /* text-align: center; */
+    padding-left: 50px;
+}
+
+.em__desp {
+    width: 33.33%;
+    /* text-align: center; */
+    color: #ffffffe5;
+    padding: 0 90px;
+
+}
+
+.button_bottom {
+    width: 33.33%;
+    text-align: center;
+
+}
+
+.button_bottom button {
+    background-color: var(--primary-Desaturated-Dark-Blue);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* or section */
+
+.or__section,
+.or__section-two {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 200px;
+    padding: 50px 0px;
+    z-index: 100;
+
+}
+
+.line {
+    position: absolute;
+    width: 1px;
+    height: 80px;
+    background-color: #999;
+    top: 44px;
+    /* bottom: 21px; */
+    z-index: 10;
+}
+
+.or__section p,
+.or__section-two p {
+    z-index: 100;
+    position: relative;
+
+}
+
+.or__section p::before {
+    content: "01";
+    position: absolute;
+    border: 1px solid #999;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    opacity: .6;
+    bottom: -14px;
+    right: -20px;
+    background-color: #ffffff;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.or__section-two p::before {
+    content: "02";
+    position: absolute;
+    border: 1px solid #999;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    opacity: .6;
+    bottom: -14px;
+    right: -20px;
+    background-color: #ffffff;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two {
+    height: 120px;
+    padding: 0;
+}
+
+.two .line {
+    top: 14px;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:1000px) {
+    .em__desp {
+
+        padding: 0 50px;
+
+    }
+}
+
+@media screen and (max-width:900px) {
+    .em__desp {
+
+        padding: 0 40px;
+
+    }
+
+    .inner_smeeting {
+        width: 58%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .experience__more {
+        flex-direction: column;
+        padding: 10px 50px;
+        text-align: center;
+    }
+
+    .experience__more_title {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .em__desp {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .button_bottom {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .inner_card1,
+    .inner_card2 {
+        width: 50%;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        width: 40%;
+    }
+
+    .right-two {
+        display: none;
+    }
+
+    .right-one {
+        display: block;
+    }
+
+    .gc__left {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+}
+
+@media screen and (max-width:586px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .inner_card1,
+    .inner_card2 {
+        width: 70%;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        width: 60%;
+    }
+
+    .buttons_section button:first-child {
+        margin-bottom: 10px;
+    }
+
+    .inner_smeeting {
+        width: 95%;
+    }
+
+    .smart_meeting {
+        padding: 20px 0;
+    }
+
+    .gc__desp {
+        width: 99.33%;
+        text-align: center;
+    }
+
+    .group_chat {
+        flex-direction: column;
+    }
+
+    .smart_meeting h1 {
+        padding: 10px 27px;
+        width: 100%;
+        font-size: 28px;
+    }
+
+}
+
+
+@media screen and (max-width:393px) {
+    .buttons_section {
+        padding: 0 88px;
+    }
+}
